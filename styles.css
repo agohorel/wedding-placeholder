@@ -1,5 +1,46 @@
 * {
-  margin: none;
-  padding: none;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  padding: 2rem;
+  animation: fade 1s ease-in forwards;
+}
+
+img {
+  animation: osc 2s ease infinite alternate-reverse;
+  max-height: 80vh;
+  position: absolute;
+  bottom: 2rem;
+  right: 4rem;
+}
+
+h1 {
+  font-family: monospace;
+  font-weight: lighter;
+}
+
+@keyframes osc {
+  from {
+    opacity: 0.65;
+    scale: 0.99;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
